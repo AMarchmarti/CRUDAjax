@@ -4,7 +4,7 @@ $(document).ready(function() {
     // show html form when 'create product' button was clicked
     $(document).on('click', '.create-product-button', function() {
         // load list of categories
-        $.getJSON("http://localhost/api/category/read.php", function(data) {
+        $.getJSON("http://localhost/dev/SimpleRestApiPHP/api/category/read.php", function(data) {
             // build categories option html
             // loop through returned list of data
             var categories_options_html = `<select name='category_id' class='form-control'>`;

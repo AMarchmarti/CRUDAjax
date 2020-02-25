@@ -6,7 +6,7 @@ $(document).ready(function() {
         var id = $(this).attr('data-id');
 
         // read one record based on given product id
-        $.getJSON("http://localhost/api/product/read_one.php?id=" + id, function(data) {
+        $.getJSON("http://localhost/dev/SimpleRestApi/api/product/update.php?id=" + id, function(data) {
 
             // values will be used to fill out our form
             var name = data.name;
@@ -16,7 +16,7 @@ $(document).ready(function() {
             var category_name = data.category_name;
 
             // load list of categories
-            $.getJSON("http://localhost/api/category/read.php", function(data) {
+            $.getJSON("http://localhost/dev/SimpleRestApiPHP/api/category/read.php", function(data) {
 
                 // build 'categories option' html
                 // loop through returned list of data

@@ -36,14 +36,13 @@ function readProductsTemplate(data, keywords) {
 
     // loop through returned list of data
     $.each(data.records, function(key, val) {
-
         // creating new table row per record
         read_products_html += `<tr>
  
             <td>` + val.name + `</td>
             <td>$` + val.price + `</td>
-            <td>` + val.category_name + `</td>
- 
+            <td>` + val.category_name + `</td> + 
+            
             <!-- 'action' buttons -->
             <td>
                 <!-- read product button -->
